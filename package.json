@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "https://philiponions.github.io/hueygonzales.github.io/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "next start"
   },
   "dependencies": {
     "-": "^0.0.1",
